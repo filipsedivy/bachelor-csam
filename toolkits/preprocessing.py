@@ -13,4 +13,7 @@ def load_img(img_path, target_size=None):
 
 
 def img_to_array(img):
-    return np.array(img) / 255.
+    tensors = np.array(img) / 255.
+    tensors = np.expand_dims(tensors, axis=0)
+
+    return tensors

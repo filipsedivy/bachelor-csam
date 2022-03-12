@@ -1,4 +1,4 @@
-from application import decode_predictions_dictionary
+from .application import decode_predictions_dictionary
 from enum import Enum
 
 
