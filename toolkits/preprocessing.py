@@ -13,5 +13,4 @@ def load_img(img_path, target_size=None):
 
 
 def img_to_array(img):
-    img = np.array(img) / 255.
-    return np.expand_dims(img, axis=0)
+    return np.array(img) / 255.
