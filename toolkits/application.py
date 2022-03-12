@@ -31,3 +31,13 @@ def decode_predictions(preds) -> list:
         result.append((labels[i], prediction))
 
     return result
+
+
+def decode_predictions_dictionary(preds) -> dict:
+    predictions = decode_predictions(preds)
+    result = {}
+
+    for label, score in predictions:
+        result[label] = score
+
+    return result
